@@ -1,0 +1,47 @@
+#+TITLE: pino
+#+STARTUP: overview
+
+An excursion into making an URL shortening service.
+
+
+* Table of Contents :toc:
+- [[#usage][Usage]]
+- [[#custom-installation][Custom Installation]]
+- [[#etymology][Etymology]]
+- [[#code-of-conduct][Code of Conduct]]
+- [[#contributing][Contributing]]
+- [[#license][License]]
+
+* Usage
+
+  WIP :shipit:
+
+* Custom Installation
+
+  WIP :shipit:
+
+* Etymology
+
+  In [[https://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland][Alice's Adventures in Wonderland]], Alice drinks the potion "DRINK ME" to shrink and eats the cake "EAT ME" to
+  grow. As we're also messing around with elixir in this excursion, we thought "drink" would be a great name for the
+  project. Then, we greek-ified it, and pino kinda makes us think of small, perhaps because of pico or something along
+  those lines. Hopefully our project lives up to its name and creates URLs shorter than the original.
+
+* Code of Conduct
+
+  Although code of conducts usually aren't needed, people should think before working with others and likewise people
+  should be able to work without stress. Follow our [[file:docs/CODE_OF_CONDUCT.md][code of conduct]] to help maintain a healthy community.
+
+* Contributing
+
+  There are many ways in which you can participate in the project, for example:
+
+  - See an open pull request? You can try reviewing it!
+  - Find a pesky bug or perhaps a neat place to refactor? Report it or fix it with a PR!
+  - Notice some weird or missing documentation? Fix or add it with a PR!
+
+  Feel free to open a pull request, check our [[file:docs/CONTRIBUTING.org][contributing guide]] for more details.
+
+* License
+
+  This project uses an MIT license, which can be viewed [[file:LICENSE.org][here]].
