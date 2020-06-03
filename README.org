@@ -16,6 +16,21 @@ An excursion into making an URL shortening service.
 
   WIP :shipit:
 
+** Setup Docker Compose
+  
+  Create a =.env= file using =scripts/create-env.sh=. Run this in the root of the project folder.
+
+  #+BEGIN_SRC bash
+  $ chmod +x scripts/create-env.sh
+  $ bash scripts/create-env.sh
+  #+END_SRC
+
+  Start the services.
+
+  #+BEGIN_SRC bash
+  $ docker-compose up --build
+  #+END_SRC
+
 * Custom Installation
 
   WIP :shipit:
