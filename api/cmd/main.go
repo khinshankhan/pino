@@ -16,11 +16,27 @@ const (
 )
 
 var (
-	dbUser = os.Getenv("DB_USER")
-	dbPass = os.Getenv("DB_PASS")
+	dbUser = getUser()
+	dbPass = getPass()
 	dbAddr = getHost()
 	dbPort = getPort()
 )
+
+func getUser() string {
+	u := os.Getenv("DB_USER")
+	if u == "" {
+		log.Fatalf("No user provided")
+	}
+	return u
+}
+
+func getPass() string {
+	p := os.Getenv("DB_PASS")
+	if p == "" {
+		log.Fatalf("No pass provided")
+	}
+	return p
+}
 
 func getPort() uint16 {
 	p := os.Getenv("DB_PORT")
