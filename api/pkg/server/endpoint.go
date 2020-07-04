@@ -23,10 +23,17 @@ const (
 
 func (m Method) Check() error {
 	valid := []Method{GET, POST, DELETE, PUT}
+	isValid := false
 	for _, v := range valid {
-		if m != v {
-			return fmt.Errorf("invalid method %s used", string(m))
+		if m == v {
+			isValid = true
+			break
 		}
 	}
+
+	if !isValid {
+		return fmt.Errorf("invalid method %s used", string(m))
+	}
+
 	return nil
 }
