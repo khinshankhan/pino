@@ -14,6 +14,10 @@ type Server struct {
 }
 
 func (s *Server) AddEndpoint(method Method, path string, action func(w http.ResponseWriter, r *http.Request)) {
+	err := method.Check()
+	if err != nil {
+		log.Fatalf("Invalid method %s", string(method))
+	}
 	s.endpoints = append(s.endpoints, Endpoint{method, path, action})
 }
 
