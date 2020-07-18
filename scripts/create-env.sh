@@ -8,4 +8,6 @@ read -p 'MongoDB password >>> ' password
   echo "MONGO_INITDB_DATABASE=pino"           # Might want to customise this?
   echo "ME_CONFIG_MONGODB_ADMINUSERNAME=$username"
   echo "ME_CONFIG_MONGODB_ADMINPASSWORD=$password"
+  echo "DB_USER=$username"
+  echo "DB_PASS=$password"
 } >> ./.env

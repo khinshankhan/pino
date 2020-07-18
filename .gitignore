@@ -1,2 +1,6 @@
 # Environment files
 .env 
+
+# GoLand files
+.idea/
+*.iml
